@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Mochiy+Pop+P+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Poppins:ital,wght@0,200;0,400;1,100;1,200;1,300&display=swap"
+    rel="stylesheet">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/dashboard/dashboard.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li class="logo">
+                    <a href="#">
+                        <span>
+                            <img src="../img/logo-hubcount.png" alt="">
+                        </span>
+                    </a>
+                </li>
+                <li id="dashboard" data-value="main">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li id="opcoes" data-value="acesso">
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="open-outline"></ion-icon>
+                        </span>
+                        <span class="title">Opções</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="main" id="main">
+            <div class="card-box">
+
+                <div class="card">
+                    <div>
+                        <div class="numeros-1">1.504</div>
+                        <div class="cardNome">Total de Votos</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div class="numeros-2">1.000</div>
+                        <div class="cardNome">Votos Nulos</div>
+                    </div>
+                    <div class="iconBx">
+                        <ion-icon name="file-tray-full-outline"></ion-icon>
+                    </div>
+                </div>
+
+            </div>
+            <div class="details">
+                <div class="orden-recente">
+                    <div class="cardHeader">
+                        <h2>Ordem canditados votados</h2>
+                    </div>
+                    <table class="tabela">
+                        <thead class="cabecalho-tabela">
+                            <tr>
+                                <td class="id">Id</td>
+                                <td class="nome">Nome</td>
+                                <td class="vice">Vice</td>
+                                <td class="legenda">Legenda</td>
+                                <td class="votos">Votos</td>
+                            </tr>
+                        </thead>
+                        <tbody class="corpo-tabela">
+                            <tr>
+                                <td class="id"></td>
+                                <td class="nome"></td>
+                                <td class="vice"></td>
+                                <td class="legenda"></td>
+                                <td class="votos">$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="acesso" id="acesso">
+
+                <a href="urna.html">Urna
+                    <ion-icon name="file-tray-full-outline"></ion-icon>
+                </a>
+
+                
+                <a href="cadastro-listagem.html">Lista
+                    <ion-icon name="reader-outline"></ion-icon>
+                </a>
+
+        </div>
+    </div>
+    </div>
+</body>
+<script src="../javascript/jQuery.js"></script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+<script src="../javascript/dashboard/dashboard.js"></script>
+
+</html>

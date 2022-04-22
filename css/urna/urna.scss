@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+
+body {
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(222, 222, 222);
+}
+
+section{
+
+    .urna{
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        border: solid .4rem;
+        width: 80rem;
+        height: 35rem;
+        background: #fff;
+
+        .tela{
+            border: solid .1rem;
+            width: 60%;
+            height: 90%;
+            display: grid;
+            grid-template-rows: 10% 40% 30% 20%;
+            padding: 1rem;
+            font-size: 1.4rem;
+
+            &.show{
+                display: none;
+            }
+
+            .cargo-principal{
+                font-size: 1.6rem;
+
+                h1{
+                    text-align: center;
+                    width: 70%;
+                    padding: .5rem;
+                }
+                
+                .descricao-cargo{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 50%;
+                    height: 3.5rem;
+                    margin-bottom: .5rem;
+
+                    form{
+                        display: flex;
+                        margin: .5rem;
+
+                        input{
+                            width: 18%;
+                            height: 3rem;
+                            margin: .5rem;
+                            text-align: center;
+                            pointer-events: none;
+                        }
+                    }
+                }
+
+                .descricao-nome{
+                    display: flex;
+
+                    #nome-candidato{
+                        border: none;
+                        margin: 0 0 0 1rem ;
+                        pointer-events: none;
+                    }
+                }
+            }
+            
+            .cargo-vice{
+                font-size: 1.6rem;
+
+                .cargo-vice-texto{
+                    text-align: center;
+                    width: 70%;
+                    padding: .5rem;
+                }
+
+                .descricao-nome{
+                    display: flex;
+
+                    #nome-vice{
+                        border: none;
+                        margin: 0 0 0 1rem ;
+                        pointer-events: none;
+                    }
+                }
+
+            }
+
+            .avisos{
+                border-top: solid .1rem;
+                margin: 0;
+
+            }
+        }
+
+        .tela2{
+            display: none;
+            align-items: center;
+            justify-content: center;
+            border: solid .1rem;
+            width: 60%;
+            height: 90%;
+            padding: 1rem;
+            font-size: 5rem;
+
+            
+
+            &.show{
+                display: flex;
+                justify-content: space-evenly;
+
+                button{
+                    height: 4rem;
+                    width: 7rem;
+                    margin: .2rem;
+                    padding: .3rem;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            }
+        }
+
+        .teclado{
+            border: solid .1rem;
+            width: 30%;
+            height: 90%;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+            background-color: rgb(42, 42, 42);
+
+            .numeros{
+                display: grid;
+                grid-template-columns: 5rem 5rem 5rem;
+                align-items: center;
+                justify-content: center;
+                
+                
+                
+                button{
+                    width: 80%;
+                    height: 80%;
+                    margin: .8rem;
+                    font-size: 2rem;
+                    background: black;
+                    color: white;
+                }
+
+                .num-0{
+                    grid-column: 2/3;
+                }
+            }
+
+            .opcoes{
+                display: flex;
+                align-items: end;
+                justify-content: center;
+
+                button{
+                    height: 4rem;
+                    width: 7rem;
+                    margin: .2rem;
+                    padding: .3rem;
+                    font-size: 1.1rem;
+                    font-weight: bold;
+                }
+
+                .confirmar{
+                    
+                    background-color: green;
+                    
+                }
+                
+                .limpar{
+                    background-color: rgb(255, 98, 0);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 850px){
+    html{
+        font-size: 50%;
+    }
+}
+
+@media screen and (max-width: 667px){
+    section{
+        width: 70rem;
+        height: 60rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+        .urna{
+            display: grid;
+            grid-template-columns: 60rem;
+            grid-template-rows: 30rem;
+            width: 90%;
+            height: 100%;
+            justify-items: center;
+
+            .tela{
+                width: 90%;
+            }
+            
+            .tela2{
+                width: 90%;
+            }
+            
+            .teclado{
+                width: 90%;
+                display: flex;
+                justify-content: space-evenly;
+
+                .opcoes{
+                    display: grid;
+                    
+                    button{
+                        margin: 1.5rem 0 0 0;
+                    }
+                }
+            }
+
+
+        }
+    }
+}

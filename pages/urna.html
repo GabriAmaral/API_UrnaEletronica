@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Eletronica</title>
+    <link rel="stylesheet" href="../css/urna/urna.css">
+</head>
+
+<body>
+    <section>
+        <div class="urna">
+            <div class="tela" id="tela">
+                <h3 class="meu-voto">Meu voto para</h3>
+
+                <div class="cargo-principal">
+
+                    <h1 class="cargo-prinpal-texto" id="cargo-prinpal-texto">Presidente</h1>
+                    
+                    <div class="descricao-cargo">
+                        <p>Numero:</p>
+                        <form action="" id="formVoto">
+                            <input  type="text" id="primeiro-numero" value="" min="0" maxlength="1" max="9">
+                            <input  type="text" id="segundo-numero" value=""  min="0" maxlength="1" max="9">
+                        </form>
+                    </div>
+                    <div class="descricao-nome">
+                        <p>Nome:</p>
+                        <input type="text" id="nome-candidato" value="">
+                    </div>
+                </div>
+
+                <div class="cargo-vice">
+                    <h2 class="cargo-vice-texto" id="cargo-vice-texto">Vice</h2>
+                    <div class="descricao-nome">
+                        <p>Nome:</p>
+                        <input type="text" id="nome-vice" value="">
+                    </div>
+
+                </div>
+                
+                <div class="avisos">
+                    <h3>Aperte a tecla:</h3>
+                    <h4>VERDE PARA CONFIRMAR</h4>
+                    <h4>LARANJA PARA LIMPAR</h4>
+                </div>
+            </div>
+
+            <div class="tela2" id="tela2">
+                <h1 class="meu-voto">FIM</h1>
+                <button class="reinicar" id="reinicar" onclick="reiniciar()">
+                    REINICIAR
+                </button>
+                <button>
+                    <a href="dashboard.html">Dashboard</a>
+                </button>
+            </div>
+
+            <div class="teclado">
+                <div class="numeros">
+                    <button id="num-1" onclick="numeroCandidato(1)">
+                        1
+                    </button>
+                    <button id="num-2" onclick="numeroCandidato(2)">
+                        2
+                    </button>
+                    <button id="num-3" onclick="numeroCandidato(3)">
+                        3
+                    </button>
+                    <button id="num-4" onclick="numeroCandidato(4)">
+                        4
+                    </button>
+                    <button id="num-5" onclick="numeroCandidato(5)">
+                        5
+                    </button>
+                    <button id="num-6" onclick="numeroCandidato(6)">
+                        6
+                    </button>
+                    <button id="num-7" onclick="numeroCandidato(7)"> 
+                        7
+                    </button>
+                    <button id="num-8" onclick="numeroCandidato(8)">
+                        8
+                    </button>
+                    <button id="num-9" onclick="numeroCandidato(9)">
+                        9
+                    </button>
+                    <button class="num-0" id="num-0" onclick="numeroCandidato(0)">
+                        0
+                    </button>
+                </div>
+
+                <div class="opcoes">
+                    <button class="branco" id="branco" onclick="confimar(true)">
+                        BRANCO
+                    </button>
+
+                    <button class="limpar" id="limpar" onclick="limpar()">
+                        LIMPAR
+                    </button>
+                    <button class="confirmar" id="confirmar" onclick="confimar(false)">
+                        CONFIRMA
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script src="../javascript/jQuery.js"></script>
+<script src="../javascript/urna/urna.js"></script>
+
+</html>
